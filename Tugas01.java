@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Tugas01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String[][] responden = new String[10][6];
+        String[][] responden = new String[10][];
 
         String namaResponden;
         int i = 0, pilJawaban = 0;
@@ -24,12 +24,12 @@ public class Tugas01 {
             rata = (double) totalJawaban / 6;
             System.out.println("Rata rata survei per responden: " + rata);
         }
-        System.out.println("\n Rata rata per pertanyaan");
+        System.out.println("Rata rata per pertanyaan");
         for (int j = 0; j < 6; j++) {
-            rataPertanyaan = totalPertanyaan[j]/responden.length;
-            System.out.println("Rata rata pertanyaan ke-"+(j+1)+": " +rataPertanyaan);
+            rataPertanyaan = (double) totalPertanyaan[j] / responden.length;
+            System.out.println("Rata rata pertanyaan ke-" + (j + 1) + ": " + rataPertanyaan);
         }
         rataKeseluruhan = rata + rataPertanyaan;
-        System.out.println("Rata rata keseluruhan: "+rataKeseluruhan);
+        System.out.println("Rata rata keseluruhan: " + rataKeseluruhan);
     }
 }
