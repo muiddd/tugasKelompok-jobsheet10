@@ -29,7 +29,7 @@ public class Tugas01 {
             rataPertanyaan = (double) totalPertanyaan[j] / responden.length;
             System.out.println("Rata rata pertanyaan ke-" + (j + 1) + ": " + rataPertanyaan);
         }
-        rataKeseluruhan = rata + rataPertanyaan;
+        rataKeseluruhan = rataResponden + rataPertanyaan;
         System.out.println("Rata rata keseluruhan: " + rataKeseluruhan);
     }
 }
