@@ -7,7 +7,7 @@ public class Tugas01 {
 
         String namaResponden;
         int i = 0, pilJawaban = 0;
-        double rata = 0, rataKeseluruhan, rataPertanyaan = 0;
+        double rataResponden = 0, rataKeseluruhan, rataPertanyaan = 0;
         int[] totalPertanyaan = new int[6];
 
         for (i = 0; i < responden.length; i++) {
@@ -21,7 +21,7 @@ public class Tugas01 {
                 totalJawaban += pilJawaban;
                 totalPertanyaan[j] += pilJawaban;
             }
-            rata = (double) totalJawaban / 6;
+            rataResponden = (double) totalJawaban / 6;
             System.out.println("Rata rata survei per responden: " + rata);
         }
         System.out.println("Rata rata per pertanyaan");
